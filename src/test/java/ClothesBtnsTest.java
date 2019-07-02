@@ -1,10 +1,8 @@
-import PageObjects.Clothes;
+import pages.Clothes;
 import Utils.EcommerceUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -13,7 +11,7 @@ import org.testng.annotations.*;
 public class ClothesBtnsTest {
 
     private Clothes clothes;
-    private WebDriver driver;
+    public WebDriver driver;
     private EcommerceUtils utils;
     private Actions action;
 
@@ -35,6 +33,11 @@ public class ClothesBtnsTest {
 
      Assert.assertTrue(clothes.getWomenBtn().isDisplayed());
 
+    }
+    @Test
+    public void Test2(){
+        Assert.assertTrue(clothes.getDressesBtn().isDisplayed());
+        clothes.getDressesBtn().click();
     }
 
     @AfterClass

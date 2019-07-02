@@ -1,4 +1,4 @@
-package PageObjects;
+package pages;
 
 import Utils.EcommerceUtils;
 import org.openqa.selenium.By;
@@ -6,12 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.text.Element;
-
 public class Clothes {
 
 
-    private final WebDriver driver;
+    private WebDriver driver;
     private EcommerceUtils ecommerceUtils;
 
     public Clothes(WebDriver webdriver) {
@@ -19,7 +17,8 @@ public class Clothes {
     }
 
     public WebElement getWomenBtn() {
-        return ecommerceUtils.waitForElementPresence(driver, By.xpath("//a[contains(text(),\'Women\')]"),30);
+       // return ecommerceUtils.waitForElementPresence(driver, By.xpath("//a[contains(text(),\'Women\')]"),30);
+        return  driver.findElement(By.xpath("//a[contains(text(),\'Women\')]"));
 
     }
 

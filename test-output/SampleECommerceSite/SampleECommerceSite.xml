@@ -3,8 +3,8 @@
 <testsuite ignored="0" hostname="DESKTOP-PJLCLMT" failures="1" tests="1" name="SampleECommerceSite" time="215.763" errors="0" timestamp="30 Jun 2019 18:16:28 GMT">
   <testcase classname="ClothesBtnsTest" name="AddToCart" time="0.003">
     <failure type="java.lang.NullPointerException">
-      <![CDATA[java.lang.NullPointerException
-at PageObjects.Clothes.getWomenBtn(Clothes.java:22)
+        <![CDATA[java.lang.NullPointerException
+at pages.Clothes.getWomenBtn(Clothes.java:22)
 at ClothesBtnsTest.AddToCart(ClothesBtnsTest.java:36)
 ... Removed 24 stack frames]]>
     </failure>
