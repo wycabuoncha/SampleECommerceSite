@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SampleECommerceSite">
+    <test name="SampleECommerceSite" parallel="false" preserve-order="true">
+        <classes>
+            <class name="ClothesBtnsTest"></class>
+        </classes>
+    </test>
+</suite>
